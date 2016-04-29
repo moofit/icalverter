@@ -84,7 +84,10 @@ Once complete, the python script will then use the `sed` command to remove these
 - Last credit to Ivaylo 'Ivo' Mihaylov for the name and logo idea!
 
 
-
+===============
+**ToDO:**
+- Move `sed` commands inside the loops to allow working on multiple ics files at once using the CLI
+- Add progress bar to the GUI for larger ics files.
 
 
 
