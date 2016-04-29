@@ -66,6 +66,8 @@ The script will walk through the ics file, searching for each calendar event. Fo
 
 - ATTENDEE - Details of invited attendees and their status'
 
+- ORGANIZER - Details for the sender of the invitation
+
 This changed version of the file is then written to disk (saved) at the same location with the value "-outputfile.ics" appended to the end.
 
 
