@@ -18,6 +18,7 @@ for ics in sys.argv[1:]:
       component['RRULE'] = ''
       component['ATTACH'] = ''  
       component['attendee'] = ['']
+      component['ORGANIZER'] = ''  
 
   # Write the changes back to the original file.
   f = open(out_file, 'w')
@@ -28,5 +29,6 @@ for ics in sys.argv[1:]:
 # Use sed to remove the placeholder values
   subprocess.call(['sed', '-i', '', '/RRULE/d', out_file ])
   subprocess.call(['sed', '-i', '', '/ATTENDEE/d', out_file ])
-  subprocess.call(['sed', '-i', '', '/ATTACH/d', out_file ])  
+  subprocess.call(['sed', '-i', '', '/ATTACH/d', out_file ])
+  subprocess.call(['sed', '-i', '', '/ORGANIZER/d', out_file ])  
   
